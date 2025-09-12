@@ -45,6 +45,11 @@ namespace HW1b_Grade
             Console.WriteLine("What was your participation score?");
             double participation = Convert.ToDouble(Console.ReadLine());
 
+            double grade = (exam1 * exam1_weight) + (exam2 * exam2_weight) + (exam3 * exam3_weight) +
+                           (homework * homework_weight) + (participation * participation_weight);
+
+            Console.WriteLine(firstname + " " + lastname + " (" + studentID + "), your final grade is: " + grade + "%");
+
         }
     }
 }
