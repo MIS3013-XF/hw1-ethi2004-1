@@ -15,10 +15,18 @@ namespace HW1a_Sales
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hi");
-            Console.WriteLine("Did this work now??");
-            Console.WriteLine("hi");
-            Console.WriteLine("is this working now")
+            const double SALES_TAX = 0.085;
+            Console.WriteLine("What are you purchasing?");
+            string product = Console.ReadLine();
+
+            Console.WriteLine("Please enter the quantity: ");
+            int quantity = Console.ReadLine();
+
+            double subtotal = (quantity * price);
+
+            double salestax = (subtotal * SALES_TAX);
+
+            double total = (subtotal + salestax);
         }
     }
 }
