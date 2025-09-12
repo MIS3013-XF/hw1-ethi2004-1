@@ -1,7 +1,7 @@
 ﻿// HW1b Grade
 
-// Your Name:
-// Did you seek help ? If yes, specify the helper or web link here: 
+// Your Name: Ethi Rajarajan
+// Did you seek help ? If yes, specify the helper or web link here: NA
 
 using System;
 using System.Collections.Generic;
@@ -48,7 +48,7 @@ namespace HW1b_Grade
             double grade = ((exam1 * exam1_weight) + (exam2 * exam2_weight) + (exam3 * exam3_weight) +
                            (homework * homework_weight) + (participation * participation_weight)) / 100;
 
-            Console.WriteLine(firstname + " " + lastname + " (" + studentID + "), your final grade is: " + grade.ToString("P"));
+            Console.WriteLine(firstname + " " + lastname + " (" + studentID + "), your final grade is: " + grade.ToString("P2"));
 
         }
     }
