@@ -15,7 +15,7 @@ namespace HW1a_Sales
     {
         static void Main(string[] args)
         {
-            const double SALES_TAX = 0.085;
+            const double sales_tax = 0.085;
             Console.WriteLine("What are you purchasing?");
             string product = Console.ReadLine();
 
@@ -28,13 +28,13 @@ namespace HW1a_Sales
 
             double subtotal = (quantity * price);
 
-            double salestax = (subtotal * SALES_TAX);
+            double salestax = (subtotal * sales_tax);
 
             double total = (subtotal + salestax);
 
-            Console.WriteLine("Your subtotal is: " + subtotal.ToString("N2"));
-            Console.WriteLine("The amount of sales tax is: " + salestax.ToString("N2"));
-            Console.WriteLine("The total cost is: " + total.ToString("N2"));
+            Console.WriteLine("Your subtotal is: $" + subtotal.ToString("N2"));
+            Console.WriteLine("The amount of sales tax is: $" + salestax.ToString("N2"));
+            Console.WriteLine("The total cost is: $" + total.ToString("N2"));
         }
     }
 }
