@@ -20,7 +20,7 @@ namespace HW1a_Sales
             string product = Console.ReadLine();
 
             Console.WriteLine("How many " + product + " do you want?");
-            int quantity = Convert.ToInt16(Console.ReadLine());
+            int quantity = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("What is the price of one " + product);
             double price = Convert.ToDouble(Console.ReadLine());
