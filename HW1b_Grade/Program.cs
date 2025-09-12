@@ -43,7 +43,8 @@ namespace HW1b_Grade
             double homework = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("What was your participation score?");
-            double exam1 = Convert.ToDouble(Console.ReadLine());
+            double participation = Convert.ToDouble(Console.ReadLine());
+
         }
     }
 }
