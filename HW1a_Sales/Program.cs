@@ -19,14 +19,22 @@ namespace HW1a_Sales
             Console.WriteLine("What are you purchasing?");
             string product = Console.ReadLine();
 
-            Console.WriteLine("Please enter the quantity: ");
-            int quantity = Console.ReadLine();
+            Console.WriteLine("How many " + product + " do you want?");
+            int quantity = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("What is the price of one " + product);
+            double price = Convert.ToDouble(Console.ReadLine());
+
 
             double subtotal = (quantity * price);
 
             double salestax = (subtotal * SALES_TAX);
 
             double total = (subtotal + salestax);
+
+            Console.WriteLine("Your subtotal is: " + subtotal);
+            Console.WriteLine("The amount of sales tax is: " + salestax);
+            Console.WriteLine("The total cost is: " + total);
         }
     }
 }
