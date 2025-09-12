@@ -15,7 +15,35 @@ namespace HW1b_Grade
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("will this work too?")
+            const double exam1_weight = .15;
+            const double exam2_weight = .25;
+            const double exam3_weight = .25;
+            const double homework_weight = .2;
+            const double participation_weight = .15;
+
+            Console.WriteLine("What is your first name?");
+            string firstname = Console.ReadLine();
+
+            Console.WriteLine("What is your last name?");
+            string lastname = Console.ReadLine();
+
+            Console.WriteLine("What is your student ID?");
+            string studentID = Console.ReadLine();
+
+            Console.WriteLine("What was your exam 1 score?");
+            double exam1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("What was your exam 2 score?");
+            double exam2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("What was your exam 3 score?");
+            double exam3 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("What was your homework score?");
+            double homework = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("What was your participation score?");
+            double exam1 = Convert.ToDouble(Console.ReadLine());
         }
     }
 }
