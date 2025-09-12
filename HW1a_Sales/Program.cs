@@ -32,9 +32,9 @@ namespace HW1a_Sales
 
             double total = (subtotal + salestax);
 
-            Console.WriteLine("Your subtotal is: " + subtotal);
-            Console.WriteLine("The amount of sales tax is: " + salestax);
-            Console.WriteLine("The total cost is: " + total);
+            Console.WriteLine("Your subtotal is: " + subtotal.ToString("N2"));
+            Console.WriteLine("The amount of sales tax is: " + salestax.ToString("N2"));
+            Console.WriteLine("The total cost is: " + total.ToString("N2"));
         }
     }
 }
