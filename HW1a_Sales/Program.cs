@@ -1,7 +1,7 @@
 ﻿// HW1a Sales Total
 
-// Your Name:
-// Did you seek help ? If yes, specify the helper or web link here: 
+// Your Name: Ethi Rajarajan
+// Did you seek help ? If yes, specify the helper or web link here: NA
 
 using System;
 using System.Collections.Generic;
@@ -32,9 +32,9 @@ namespace HW1a_Sales
 
             double total = (subtotal + salestax);
 
-            Console.WriteLine("Your subtotal is: $" + subtotal.ToString("N2"));
-            Console.WriteLine("The amount of sales tax is: $" + salestax.ToString("N2"));
-            Console.WriteLine("The total cost is: $" + total.ToString("N2"));
+            Console.WriteLine("Your subtotal is: " + subtotal.ToString("C2"));
+            Console.WriteLine("The amount of sales tax is: " + salestax.ToString("C2"));
+            Console.WriteLine("The total cost is: " + total.ToString("C2"));
         }
     }
 }
